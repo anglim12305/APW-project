@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mb-1"><%= article.title %></h1>
+    <div class="text-muted mb-2">
+
+
+
+
+
+      <%= article.createdAt.toLocaleDateString() %>
+    </div>
+    <a href="/" class="btn btn-secondary">View all surveys</a>
+    <a href="/articles/edit/<%= article.id %>" class="btn btn-light">Edit Your Survey</a>
+    <div>
+      <label for="Question 1">What is Your name</label>
+      <h1 class="mb-1"><%= article.question1 %></h1>
+    </div>
+    <div>
+      <label for="Question 2">What is your last name?</label>
+      <h1 class="mb-1"><%= article.question2 %></h1>
+    </div>
+    <div>
+      <label for="Question 3">Do you like this class?</label>
+      <h1 class="mb-1"><%= article.question3 %></h1>
+    </div>
+    <div>
+      <label for="Question 4">What has been your favorite part?</label>
+      <h1 class="mb-1"><%= article.question4 %></h1>
+    </div>
+    <div>
+      <label for="Question 5">How could this class change in the future?</label>
+      <h1 class="mb-1"><%= article.question5 %></h1>
+    </div>
+    <div>
+      <label for="Question 6">Do you think its fair to have all levels of coding experience to take this class?</label>
+      <h1 class="mb-1"><%= article.question6 %></h1>
+    </div>
+    <div>
+      <label for="Question 7">Do you think that in class classes will work better for you?</label>
+      <h1 class="mb-1"><%= article.question7 %></h1>
+    </div>
+    <div>
+      <label for="Question 8">If so then Why? </label>
+      <h1 class="mb-1"><%= article.question8 %></h1>
+    </div>
+  </div>
+</body>
+</html>
