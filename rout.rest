@@ -1,0 +1,11 @@
+POST http://localhost:3000/articles/new
+content-Type: application/json
+
+{
+    "name": "hello",
+    "email": "hello",
+    "password":"hello"
+
+}
+###
+GET 
